@@ -20,12 +20,12 @@ class Song
   end
   
   def self.genres 
-    @@genres
+    @@genres.uniq
     #remove duplicates from array
   end
   
   def self.artists
-    @@artists
+    @@artists.uniq
     #remove duplicates from array
   end
   
