@@ -4,7 +4,7 @@ class Song
   @@artist_count = 0
   @@genre_count = 0
   @@all_artists = []
-  @@all_genres = []
+  @@genres = []
   
   def initialize(name,artist,genre)
     @name = name
@@ -14,11 +14,15 @@ class Song
     @@artist_count += 1
     @@genre_count += 1
     @@all_artists << @artist
-    @@all_genres << @genre
+    @@genres << @genre
   end
   
   def self.count 
     @@count
+  end
+  
+  def self.genres 
+    #remove duplicates from array
   end
   
   def self.artists
@@ -34,7 +38,4 @@ class Song
     @gcount
   end
   
-  def self.genres 
-    @@genre_count
-  end
 end
