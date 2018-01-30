@@ -33,7 +33,6 @@ class Song
    @gcount = {}
    @@genres.map{|item| 
     @gcount[item] = @@genres.count(item)
-    @@genres.delete(item)
     }
     @gcount
   end
