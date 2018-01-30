@@ -13,6 +13,7 @@ class Song
     @genre = genre
     @@all_artists << @artist
     @@num_of_song_instances += 1
+    @@artist_count += 1
     @@all_genres << @genre
   end
   
@@ -31,5 +32,8 @@ class Song
     @all_genres.delete(item)
     }
     @gcount
+  end
+  
+  def self.genres 
   end
 end
