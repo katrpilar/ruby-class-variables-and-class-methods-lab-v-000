@@ -25,6 +25,9 @@ class Song
   end
   
   def self.genre_count
-    @@all_genres.each{|item| @@all_genres.count(item)}
+    @@all_genres.each{|item| @@all_genres.count(item)
+      
+      @all_genres.delete
+    }
   end
 end
