@@ -1,6 +1,6 @@
 class Song
   attr_accessor :name,:artist,:genre
-  @@count = 0
+  @@count = 0 #number of new songs that are created from the Song
   @@artist_count = 0
   @@genre_count = 0
   @@all_artists = []
@@ -10,7 +10,7 @@ class Song
     @name = name
     @artist = artist
     @genre = genre
-    @@num_of_song_instances += 1
+    @@count += 1
     @@artist_count += 1
     @@genre_count += 1
     @@all_artists << @artist
@@ -18,7 +18,7 @@ class Song
   end
   
   def self.count 
-    @@num_of_song_instances
+    @@count
   end
   
   def self.artists
