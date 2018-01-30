@@ -38,12 +38,12 @@ class Song
   end
   
   def self.artist_count
-   # @acount = {}
-   # @@artists.map{|item| 
-   # @acount[item] = @@artists.count(item)
-   # @artists.delete(item)
-   # }
-    #@acount
+   @acount = {}
+   @@artists.map{|item| 
+    @acount[item] = @@artists.count(item)
+    @artists.delete(item)
+    }
+    @acount
   end
   
 end
