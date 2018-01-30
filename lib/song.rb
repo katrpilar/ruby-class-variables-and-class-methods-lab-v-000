@@ -1,5 +1,5 @@
 class Song
-  attr_accessor :name,:artist,:genre
+  attr_accessor :name, :artist, :genre
   @@count = 0 #number of new songs that are created from the Song
   @@artist_count = 0
   @@genre_count = 0
