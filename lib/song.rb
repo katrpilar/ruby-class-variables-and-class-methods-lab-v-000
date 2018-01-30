@@ -14,6 +14,7 @@ class Song
     @@all_artists << @artist
     @@num_of_song_instances += 1
     @@artist_count += 1
+    @@genre_count += 1
     @@all_genres << @genre
   end
   
@@ -35,5 +36,6 @@ class Song
   end
   
   def self.genres 
+    @@genre_count
   end
 end
