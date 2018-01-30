@@ -3,7 +3,7 @@ class Song
   @@artist_count = 0
   @@genre_count = 0
   @@all_artists = []
-  @@num_of_song_instances
+  @@num_of_song_instances = 0
   @@all_genres = []
   
   def initialize(song_name,song_artist,song_genre)
