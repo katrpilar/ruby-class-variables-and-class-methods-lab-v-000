@@ -41,7 +41,6 @@ class Song
    @acount = {}
    @@artists.map{|item| 
     @acount[item] = @@artists.count(item)
-    @artists.delete(item)
     }
     @acount
   end
