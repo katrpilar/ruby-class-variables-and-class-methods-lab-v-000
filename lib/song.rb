@@ -35,9 +35,18 @@ class Song
     @gcount = {}
     @@genres.map{|item| 
     @gcount[item] = @@genres.count(item)
-    @all_genres.delete(item)
+    @@genres.delete(item)
     }
     @gcount
+  end
+  
+  def self.artist_count
+    @acount = {}
+    @@artists.map{|item| 
+    @acount[item] = @@artists.count(item)
+    @artists.delete(item)
+    }
+    @acount
   end
   
 end
