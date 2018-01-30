@@ -25,11 +25,11 @@ class Song
   end
   
   def self.genre_count
-    gcount = {}
+    @gcount = {}
     @@all_genres.map{|item| 
-    gcount[item] = @@all_genres.count(item)
+    @gcount[item] = @@all_genres.count(item)
     @all_genres.delete(item)
     }
-    gcount
+    @gcount
   end
 end
