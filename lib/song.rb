@@ -6,10 +6,10 @@ class Song
   @@num_of_song_instances = 0
   @@all_genres = []
   
-  def initialize(song_name,song_artist,song_genre)
-    @song = song_name
-    @artist = song_artist
-    @genre = song_genre
+  def initialize(name,artist,genre)
+    @name = name
+    @artist = artist
+    @genre = genre
     @@all_artists << @artist
     @@num_of_song_instances += 1
     @@all_genres << @genre
